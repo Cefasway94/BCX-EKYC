@@ -1,0 +1,28 @@
+{
+  "name": "controller",
+  "version": "1.0.0",
+  "description": "EKYC controller",
+  "main": "controller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev":"nodemon index.js"
+  },
+  "author": "Phronetech 117",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-handler": "^0.2.0",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.11",
+    "monk": "^7.0.0",
+    "nodemon": "^1.19.1",
+    "volleyball": "^1.5.1"
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BCX-KYC Client</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BCX</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/input.css">
+
+</head>
+
+<body class="vertical-layout">
+
+    <center>
+        <header class="head" >
+            <img src="../assets/Group 2@2x.png" alt="Image" width="130" height="100">
+        </header>
+    </center>
+
+
+    <main class=" container" style="display: flex;  align-items:center; ">
+
+            <div class="card shadow-lg rounded-lg custom col-xs-8 col-sm-7 col-md-7 col-lg-6 col-xl-5 justify-content-center"
+                style="width:fit-content; background-image:url('../assets/Path283.png'); 
+                background-repeat: no-repeat; background-position: bottom right; align-items:center; margin: auto;">
+
+            <h1 class="title1">
+                Log In
+            </h1>
+                
+                <form id="loginform" autocomplete="off">
+                <section class="flexbox-container">
+                    <div class="col-12 align-items-center justify-content-center">
+                <center>
+                <div class="inputs" style="width: 15em">
+                    <!-- Material unchecked -->
+                    <div class="form-group inputWithIcon ">
+                        <label for="username" class="inp">
+                        <i class="fas fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                            <input  type="text" id="username" placeholder="&nbsp;"
+                                autocomplete="username" required>
+                            <span class="label" style="margin-left:6em;">User name</span>
+                            <span class="border"></span>
+                        </label>
+                        
+                        <!-- <div *ng-if="user.invalid && user.touched" class="validation-error"> name required</div> -->
+                    </div>
+
+                    <!-- Password input -->
+                    <div class="form-group inputWithIcon" style="margin-top:1.5em;">
+                        <label for="password" class="inp">
+                                <i class="fas fa-unlock-alt fa-lg" aria-hidden="true"></i>
+                                <input type="password" id="password" placeholder="&nbsp;"
+                                    autocomplete="current-password" required>
+                            <span class="label" style="margin-left:6em;" >Password</span>
+                            <span class="border"></span>
+                        </label>
+
+                       <!--  <div *ng-if="password.invalid && password.touched" class="validation-error"> password required</div> -->
+                    </div>
+                </div>
+
+                <!-- Material radio -->
+                <div class="col-12 custom-control custom-switch remember">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1" >
+                        <label class="custom-control-label" for="customSwitch1">Remember me</label>
+                    </div> 
+               </center>             
+                        <center>
+
+                        <div class="form-group">
+                            <a id="login" class="btn btn-primary buttn" style="color :white; height: 2.4em; 
+                            background: #43425D; font-size: 1em; border-radius: 100px; border-color: #43425D;
+                             margin-top: 1.5em; width: 65%;">
+                                Log In
+                            </a>
+                        </div>
+                        
+                    <div class="remember col-md-12 col-sm-12">
+                           <a > <label> Reset password</label> </a>
+                        </div>
+                </center>
+
+                    </div>
+                 </section>
+                </form>
+            </div>
+    </main>
+    <footer>
+        
+    </footer>
+
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+
+
+<script type="text/javascript" src="../js/login.js"></script>
+</body>
+</html>
+
+<!-- Encription (Secured data transfer) / Token managent / Validation / UI Randering / theme -->

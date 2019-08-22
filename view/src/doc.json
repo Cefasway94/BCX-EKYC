@@ -1,0 +1,50 @@
+{
+    "data":[
+        {
+        "id":"1107",
+        "fname":"peter",
+        "lname": "shekiondo",
+        "email":"tech@crunch.com",
+        "position":"age",
+        "age":"18",
+        "location":"home"
+        }, 
+         {
+            "id": "1107",
+            "fname": "harry",
+            "lname": "shekiondo",
+            "email": "softtech@dvx.cm",
+            "position": "age",
+            "age": "18",
+            "location":"home"
+        },
+         {
+            "id": "1107",
+            "fname": "john",
+            "lname": "shekiondo",
+            "email": "dvt@dvx.cm",
+            "position": "age",
+            "age": "18",
+            "location":"home"
+        },
+         {
+            "id": "1107",
+            "fname": "john",
+            "lname": "shekiondo",
+            "email": "dvx@dvdx.cm",
+            "position": "age",
+            "age": "18",
+            "location":"home"
+        },
+         {
+            "id": "1107",
+            "fname": "john",
+            "lname": "shekiondo",
+            "email": "dvx@dvx.cm",
+            "position": "age",
+            "age": "18",
+            "location":"home"
+        }
+    ]
+    
+}

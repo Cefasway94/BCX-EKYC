@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+
+body, html{
+
+    height: 100%;
+    margin: 0;
+    background-color: 3;
+    background: #E4E4E4;
+
+}
+
+body{
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
+
+.custom{
+    background-color: #EFEFEF;   
+}
+
+ .inputs{
+    margin-top: 2em;
+    /*margin-left: 1em;*/
+    position: relative;
+    display: block;
+
+} 
+
+ input.ng-touched.ng-invalid{
+    border-color: #dc3545;
+} 
+
+div.validation-error{
+width:50%;
+margin-top:.25rem;
+font-size:80%;
+color:#dc3545;
+}
+
+.head{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0.5em;
+    font-weight: bold;
+    font-family: Segoe UI;
+    color: #43425D;
+}
+
+.title1{
+    padding-top: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: Segoe UI;
+    color: #43425D;
+    text-align: center;
+}
+
+.remember{
+    margin-top: 1.5em;
+        color: #43425D;
+}
+
+.buttn{
+    
+    border-radius: 100px;
+    border-color: #43425D;
+    transition: box-shadow .3s;
+}
+
+.buttn:hover {
+    border-color: rgb(95, 95, 95);
+    box-shadow: 0 0 10px rgb(95, 95, 95);
+
+}
+

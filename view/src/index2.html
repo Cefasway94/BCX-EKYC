@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <!-- <script type="text/javascript">
+        if (localStorage.length !== 2) {
+            window.location = "http://127.0.0.1:5500/view/src/index.html";
+        }
+    </script> -->
+<head>
+      <title>BCX-KYC Client</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>BCX</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/input.css">
+
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS / google material -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="shadow-lg">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <img src="" alt="" class="d-inline-block align-top" width="70" height="50">
+                </div>
+
+                <ul class="list-unstyled components">
+                    <p id="timer">27 june 12:30 </p>
+                    <li class="homandac">
+                        <a href=" http://127.0.0.1:5500/view/src/index2.html">
+                            <i class="fas fa-home" style="margin-left:1em ; padding-right: .5em; color:#A5A4BF; font-size: 1em;"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="homandac" id="distb">
+                        <a>
+                            <i class="fas fa-list" style="margin-left:1em ; padding-right: .5em; color:#A5A4BF; font-size: 1em;"></i>
+                            Accounts
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="list-unstyled logout">
+
+                    <li>
+                        <a href="#" id="logout" class="out">
+                            <i class="fas fa-sign-out-alt" style=" padding-right:.5em; color:#A5A4BF;"></i>
+                            Log out
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Page Content  -->
+
+        <!-- Navigation header -->
+        <div id="content">
+
+            <nav class="navbar shadow navbar-expand-md navbar-light bg-light" >
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info"
+                        style="background-color:#f8f9fa; border-color: #f8f9fa;">
+                        <i class="fas fa-align-left" style="color:#43425D; font-size: 1em;"></i>
+                        <span style="font-weight: 300; color:#43425D; margin-left: .3em; font-size: 1.1em;">Side
+                            menu</span>
+                    </button>
+
+                    <div >
+                        <ul class="nav-men list-unstyled d-flex flex-md-row align-items-md-center"
+                            style="font-size: 1em; font-weight: 300;">
+                            <li class="nav-item">
+                                <a class="nav-link" id="username" href="#" style="padding-top: 15px; font-size: .9em;">User Name</a>
+                            </li>
+                            <div class="avater">
+                                <img id="avat" src="../assets/Retouched-6682@2x.png" alt=""
+                                    class="img-fluid rounded-circle">
+                            </div>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+            
+            <div id="accounts" class="row" style="width: calc(100% - 50px); margin-left: 0.5em;">
+<!-- Scanning and verication -->
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"
+                    style="margin-top: 0.5em;  width: 23em; height: 30em;">
+                    <center>
+                    <form class="shadow" style=" width: 23em; height: 30em;  border-block-style:
+                     solid; border-color:#92929F; border-radius: 10px; border-style: solid; border-width:.5px;" autocomplete="off">
+
+                        <!-- Nida id number  -->
+                        <div class="form-group inputWithIcon" style="padding-top:2em; width: 15em;">
+                            <label for="nidaID" class="inp">
+                                <input type="text2" id="nidaID" placeholder="&nbsp;" required>
+                                <span class="label" 
+                                style="font-weight: 100; font-size: 1.2em; margin-left:3.7em;">
+                                ID number</span>
+                            </label>
+                        </div>
+
+                        <h3 style=" font-weight: 100; font-size: 21px; margin-top: 1.3em; color: #43425D;">
+                            Click below to scan
+                        </h3>
+                        <div class="scanner" onclick="captureFP()" style=" width: 13em; height: 14em; margin-top: 1.6em; border-color: #92929F; 
+                            border-radius: 15px; border-style: solid; border-width:.5px; background-color: #E4E4E4; transition: box-shadow .3s;">
+                            <img id="FPImage" src="../assets/print1.png" alt="" height="210" width="200"
+                                style="margin-top: 0.4em;"></br>
+                        </div>
+
+                         <div class="form-group">
+                             <a id="verify" class="scanner btn btn-md shadow btn-secondary" 
+                             style=" font-weight: 400; height: 2.5em; width: 10em; color: white; background:#43425D;
+                             border-radius: 6px; border-color:#43425D;
+                             margin-top: 2em; transition: box-shadow .3s;">
+                                 Verify
+                             </a>
+                         </div>
+
+                </center>
+                </form>
+                </div>
+
+<!-- Show the results -->                
+
+                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4"
+                     style="margin-top: 4.5em;">                                      <!-- main div-->
+                     <center>
+                           <h3 style=" font-weight: 300; font-size: 22px; color: #43425D;">
+                               Identification Details
+                           </h3>
+
+                         <div class="shadow"
+                             style=" width: 29em; height: 17em;  border-block-style: 
+                             solid; border-color:#92929F; border-radius: 10px; 
+                             border-style: solid; border-width:.5px; margin: auto; margin-top: 15px;">
+
+                        <div class="row" style=" margin-top:5px; margin: auto;">                             <!-- image and details-->                                                    
+                            <div class=" col-4" >           
+                                    <img alt="" src="../assets/Group 92@2x.png" width="105" height="110"
+                                    style=" margin-top: 10px; border-block-style:solid; border-color:#92929F; border-radius: 10px; border-style: solid; border-width:.5px;">
+                              </div>
+
+                             <div class="col-8" style="margin-top:10px;">                                 <!-- Details-->
+                                        <span style=" font-size: 18px; color: #43425D;">
+                                            123674838749347349743473 
+                                        </span> <br />
+                                        <a style=" font-size: 18px; color: #43425D; 
+                                        font-weight:100;">
+                                             <span id="fname" style="color: #43425D;">Sokoine</span> 
+                                            <span id="fname" style="color: #43425D;">Mandela </span>
+                                            <span id="fname" style="color: #43425D;">Sokoine </span>
+                                        </a> <br /> <br /> 
+                                         <a style=" font-size: 16px; color: #43425D; 
+                                         font-weight:100;">
+                                            <span id="fname" style="color: #43425D;">
+                                                Date of birth : <span id="dateofbirth"> 12/12/3124 </span> 
+                                            </span>
+                                        </a>
+                                </div>
+                             </div>
+                             <div class="col 12">
+                                 <h3 style=" font-size: 15px; color: #43425D; margin-top:10px; "> Other Details </h3>
+                             </div>
+                     </div>
+                      <button type="submit" id="verify" class="scanner btn btn-md shadow btn-secondary" style=" font-weight: 400; height: 2.5em; 
+                             width: 10em; background:#43425D; margin-top: 1em; border-radius: 6px; border-color:#43425D;
+                              transition: box-shadow .3s;">Clear card</button>
+                  </center>
+                </div>
+                <p id="resultss">
+
+                </p>
+            </div>            
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+    </script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
+    </script>
+
+<!----------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------->
+ <script type="text/javascript" src="../js/index2.js"></script>
+
+   <!--<script type="text/javascript"></script>-->
+   
+</body>
+
+</html>
